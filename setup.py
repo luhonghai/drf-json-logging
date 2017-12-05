@@ -64,7 +64,7 @@ if sys.argv[-1] == 'publish':
     os.system("python setup.py bdist_wheel upload")
     print("You probably want to also tag the version now:")
     print("  git tag -a {0} -m 'version {0}'".format(
-        get_version('drf_custom_json_api')))
+        get_version('drf_json_logging')))
     print("  git push --tags")
     sys.exit()
 
@@ -77,7 +77,7 @@ setup(
     long_description=read('README.md'),
     author='Paul',
     author_email='',
-    packages=get_packages('drf_custom_json_api'),
+    packages=get_packages('drf_json_logging'),
     package_data=get_package_data('drf_json_logging'),
     classifiers=[
         'Development Status :: 5 - Production/Stable',
